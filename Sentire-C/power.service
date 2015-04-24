@@ -1,0 +1,11 @@
+[Unit]
+Description= autostart powerscript
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python2 /home/owapp/Software/enable_battery.py
+
+[Install]
+WantedBy=multi-user.target
+
